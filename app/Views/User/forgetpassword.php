@@ -19,42 +19,36 @@
     <img src="assets/images/logo.png" alt="logo" id="logo">
     <main>
         <h1>Quản lý sinh viên</h1>
-        <form action="<?= base_url('/login') ?>" method="post">
-            <h4>ĐĂNG NHẬP</h4>
+        <form action="<?= base_url('/checkotp') ?>" method="get">
+            <h4>QUÊN MẬT KHẨU</h4>
             <div class="group">
-                <label for="">Tài khoản</label>
+                <label for="">Tài khoản/ Email</label>
                 <input type="text" id="username" name="username" placeholder="Tên đăng nhập" required>
             </div>
-            <div class="group">
-                <label for="">Mật khẩu</label>
-                <input type="password" id="password" name="password" placeholder="Mật khẩu" required>
-                <img id="view-pw" src="assets/images/eyeopen.svg" alt="">
-
-                <a href="<?= base_url('/forgetpassword') ?>">Quên mật khẩu?</a>
-            </div>
-            <button class="button-24" role="button">ĐĂNG NHẬP</button>
+            <button type="submit" class="button-24" id="forget-password-btn">Lấy mã OTP</button>
         </form>
+
+
     </main>
+   
+
     <script>
-        document.getElementById("password").addEventListener('input', function (){
-            if(this.value){
+        document.getElementById("password").addEventListener('input', function() {
+            if (this.value) {
                 document.getElementById("view-pw").style.display = 'block';
-            }else{
+            } else {
                 document.getElementById("view-pw").style.display = 'none';
             }
         })
-        document.getElementById("view-pw").addEventListener('click', function (){
+        document.getElementById("view-pw").addEventListener('click', function() {
             let pw = document.getElementById("password");
-            if (pw.getAttribute('type') == 'password')
-            {   
-                pw.setAttribute('type',"text");
+            if (pw.getAttribute('type') == 'password') {
+                pw.setAttribute('type', "text");
                 this.src = this.src.replace('open', 'close')
-            }
-            else
-            {
-                pw.setAttribute('type',"password");
+            } else {
+                pw.setAttribute('type', "password");
                 this.src = this.src.replace('close', 'open')
-            }       
+            }
         });
     </script>
 </body>
