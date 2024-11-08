@@ -9,5 +9,5 @@ class User extends BaseController
         return view('User/login');
     }
 
-    
+
 }

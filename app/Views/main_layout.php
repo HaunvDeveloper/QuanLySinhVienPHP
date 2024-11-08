@@ -68,12 +68,22 @@
                             </a>
                         </li>
                     </ul>
+
                     <form class="d-flex my-2 my-lg-0">
                         <input class="form-control me-sm-2" type="text" placeholder="Search" />
                         <button class="search-bt">
                             <img src="assets/images/search.svg" alt="" width="20">
                         </button>
                     </form>
+
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0 gap-2 " style="margin-left: 50px;">
+
+                        <li class="nav-item">
+                            <a class="nav-link  text-light thanhtieude" href="<?= base_url('login') ?>">
+                                    Log in
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -108,6 +118,7 @@
         </div>
     </footer>
 
+    <script src="libs/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
