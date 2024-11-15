@@ -22,7 +22,7 @@
             <img id="logo" src="assets/images/logo.png" width="150">
             <h1>Quản lý HCMUE</h1>
         </div>
-        <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #056392;" id="header-bar">
+        <nav class="navbar navbar-expand-sm navbar-light" style="background-color: rgba(18, 72, 116, 1);;" id="header-bar">
             <div class="container my-container-header">
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -92,7 +92,7 @@
     </header>
 
     <!-- Section Body -->
-    <main>
+    <main class="w-100">
         <?= $this->renderSection('body') ?>
     </main>
     
@@ -100,22 +100,25 @@
     <footer>
         <div id="footer-info">
             <div class="row">
-                <div class="col-6 column">
+                <div class="col-5 column">
                     <h4>Trường Đại học Sư phạm Thành phố Hồ Chí Minh</h4>
                     <h6>Địa chỉ: 280 An Dương Vương, Quận 5, TP.HCM</h6>
                     <h6>Email: hcmue@edu.vn</h6>
                 </div>
-                <div class="col-6 column">
+                <div class="col-5 column">
                     <img src="assets/images/hcmue.jpg" alt="" class="imghcmue">
                     <h6>Số lượng truy cập: xxxxxx</h6>
                     <h1>::.</h1>
                 </div>
+                <img class="toanha" src="assets/images/footer_image.png" alt="">
             </div>
+            <div class="footer-line"></div>
 
-            <div id="sign">
+            
+        </div>
+        <div id="sign">
                 <p>By Díp Dồ Team </p>
             </div>
-        </div>
     </footer>
 
     <script src="libs/jquery.min.js"></script>

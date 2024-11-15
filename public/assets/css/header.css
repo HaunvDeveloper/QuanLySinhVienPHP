@@ -1,3 +1,8 @@
+
+body{
+    overflow-x: hidden
+}
+
 header {
     width: 100%;
     margin: 0;
@@ -40,8 +45,7 @@ header {
 }
 
 #header-bar .nav-item:hover {
-    background-color: #0e4874;
-    transform: scale(1.2);
+    background-color: rgb(14, 56, 90);
 }
 
 .dropdown-menu {
@@ -64,13 +68,21 @@ header {
     }
 }
 .search-bt{
-    background-color: #056392 !important;
+    background-color:rgba(18, 72, 116, 1) !important;
     border: none;
     padding: 5px 11px;
 }
 .search-bt:hover{
-    background-color: #0e4874 !important;
+    background-color: rgb(11, 51, 84)!important;
     border: none;
     border-radius: 10px;
     padding: 5px 11px;
+}
+
+.btn-primary{
+    background-color: rgba(18, 72, 116, 1) !important;
+}
+
+.btn-danger{
+    background-color: #CF373D !important;
 }

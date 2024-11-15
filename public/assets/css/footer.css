@@ -1,6 +1,7 @@
 #footer-info {
-    background-color: #056392;
+    background-color: rgba(18, 72, 116, 1);
     color: white;
+    position: relative;
 }
 
 .column{
@@ -25,4 +26,22 @@
     width: 200px;
     border-radius: 20px;
     margin-bottom: 10px;
+}
+footer .row{
+    position: relative;
+}
+footer .toanha{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: 350px;
+    z-index: 100;
+}
+.footer-line{
+    background-color: #CF373D;
+    position: absolute;
+    height: 20px;
+    bottom: 0;
+    width: 100%;
 }

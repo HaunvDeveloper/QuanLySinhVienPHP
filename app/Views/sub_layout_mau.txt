@@ -1,0 +1,25 @@
+
+<?= $this->extend('main_layout') ?>
+
+<?= $this->section('title') ?>
+    Danh sách giáo viên
+<?= $this->endSection() ?>
+
+
+<?= $this->section('links') ?>
+    <link rel="stylesheet" href="assets/css/teacher.css">
+<?= $this->endSection() ?>
+
+
+
+<?= $this->section('body') ?>
+    
+<?= $this->endSection() ?>
+
+
+
+
+<?= $this->section('scripts') ?>
+    <script src="/assets/js/about.js"></script>
+<?= $this->endSection() ?>
+
