@@ -2,12 +2,12 @@
 <?= $this->extend('main_layout') ?>
 
 <?= $this->section('title') ?>
-    Danh sách giáo viên
+Danh sách giáo viên
 <?= $this->endSection() ?>
 
 
 <?= $this->section('links') ?>
-    <link rel="stylesheet" href="assets/css/course.css">
+<link rel="stylesheet" href="assets/css/course.css">
 <?= $this->endSection() ?>
 
 
@@ -23,7 +23,7 @@
       </div>
       <button data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-add-course">+ Thêm môn học</button>
     </div>
-    
+
     <table class="table table-hover">
       <thead>
         <tr>
@@ -34,78 +34,54 @@
         </tr>
       </thead>
       <tbody>
+        <?php for($i = 0; $i < 15; $i++): ?>
         <tr>
           <td>COMP18001</td>
           <td>Công nghệ phần mềm</td>
           <td>Công nghệ Thông tin</td>
-          <td><button class="btn btn-link text-decoration-none">⋮</button></td>
+          <td>
+            <div class="dropdown">
+              <button class="btn btn-link text-decoration-none dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              ⋮
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Sửa</a></li>
+                <li><a class="dropdown-item" href="#">Xóa</a></li>
+              </ul>
+            </div>
+          </td>
         </tr>
-        <tr>
-          <td>COMP18002</td>
-          <td>Công nghệ phần mềm</td>
-          <td>CNTT</td>
-          <td><button class="btn btn-link text-decoration-none">⋮</button></td>
-        </tr>
-        <tr>
-          <td>COMP18101</td>
-          <td>Thiết kế web</td>
-          <td>CNTT</td>
-          <td><button class="btn btn-link text-decoration-none">⋮</button></td>
-        </tr>
-        <tr>
-          <td>COMP18101</td>
-          <td>Thiết kế web</td>
-          <td>CNTT</td>
-          <td><button class="btn btn-link text-decoration-none">⋮</button></td>
-        </tr>
-        <tr>
-          <td>COMP18101</td>
-          <td>Thiết kế web</td>
-          <td>CNTT</td>
-          <td><button class="btn btn-link text-decoration-none">⋮</button></td>
-        </tr>
-        <tr>
-          <td>COMP18101</td>
-          <td>Thiết kế web</td>
-          <td>CNTT</td>
-          <td><button class="btn btn-link text-decoration-none">⋮</button></td>
-        </tr>
-        <tr>
-          <td>COMP18101</td>
-          <td>Thiết kế web</td>
-          <td>CNTT</td>
-          <td><button class="btn btn-link text-decoration-none">⋮</button></td>
-        </tr>
-        <!-- Add more rows as needed -->
+        <?php endfor; ?>
+        
       </tbody>
     </table>
 
-    
-    <div class="pag-container middle">
-        <div class="pagination">
-            <ul>
-                <img class="move previous" src="assets/images/circle-chevron-right-solid.svg" alt="">
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li class="active"><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <img class="move next" src="assets/images/circle-chevron-right-solid.svg" alt="">
 
-            </ul>
-        </div>
+    <div class="pag-container middle">
+      <div class="pagination">
+        <ul>
+          <img class="move previous" src="assets/images/circle-chevron-right-solid.svg" alt="">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li class="active"><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <img class="move next" src="assets/images/circle-chevron-right-solid.svg" alt="">
+
+        </ul>
+      </div>
     </div>
 
   </div>
@@ -124,20 +100,20 @@
 
       <div class="modal-body">
         <div class="form-group">
-            <label for="" class="form-label">Mã Môn Học</label>
-            <input type="text" class="form-control" name="" id="">
+          <label for="" class="form-label">Mã Môn Học</label>
+          <input type="text" class="form-control" name="" id="">
         </div>
         <div class="form-group">
-            <label for="" class="form-label">Tên Môn Học</label>
-            <input type="text" class="form-control" name="" id="">
+          <label for="" class="form-label">Tên Môn Học</label>
+          <input type="text" class="form-control" name="" id="">
         </div>
         <div class="form-group">
-            <label for="" class="form-label">Khoa/ Bộ môn</label>
-            <select name="" class="form-control" id="">
-                <option value="1">CNTT</option>
-                <option value="2">Toan</option>
-                <option value="3">Ly</option>
-            </select>
+          <label for="" class="form-label">Khoa/ Bộ môn</label>
+          <select name="" class="form-control" id="">
+            <option value="1">CNTT</option>
+            <option value="2">Toan</option>
+            <option value="3">Ly</option>
+          </select>
         </div>
       </div>
 
@@ -155,6 +131,5 @@
 
 
 <?= $this->section('scripts') ?>
-    <script src="/assets/js/about.js"></script>
+<script src="/assets/js/about.js"></script>
 <?= $this->endSection() ?>
-
