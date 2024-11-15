@@ -13,4 +13,9 @@ class Home extends BaseController
     {
         return view('Home/about');
     }
+
+    public function teacher()
+    {
+        return view('Home/teacher');
+    }
 }
