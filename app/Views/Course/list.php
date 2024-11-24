@@ -26,11 +26,11 @@ Danh sách giáo viên
 
     <table class="table table-bordered table-hover">
       <thead>
-        <tr>
-          <th class="text-center">Mã môn học</th>
-          <th class="text-center">Tên môn học</th>
-          <th class="text-center">Số tín chỉ</th>
-          <th class="text-center">Khoa - Bộ môn</th>
+        <tr class="table-primary">
+          <th class="text-center text-light">Mã môn học</th>
+          <th class="text-center text-light">Tên môn học</th>
+          <th class="text-center text-light">Số tín chỉ</th>
+          <th class="text-center text-light">Khoa - Bộ môn</th>
           <th width="13%"></th>
         </tr>
       </thead>
