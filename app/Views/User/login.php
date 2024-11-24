@@ -44,34 +44,34 @@
             <div class="left-section">
                 <div class="information">
                     <img src="assets/images/logo-HCMUE.png" alt="Logo" class="logo" >
-                    <h1>Sign in to</h1>
-                    <h2>Student Information System</h2>
+                    <h1>ĐĂNG NHẬP</h1>
+                    <h2>HỆ THỐNG QUẢN LÝ SINH VIÊN</h2>
                 </div>
                 
                 <img src="assets/images/Toa-nha-A-01.png" alt="Building Illustration" class="building">
             </div>
             <div class="right-section">
                 <div class="login-box">
-                    <h3>Sign in</h3>
+                    <h3>ĐĂNG NHẬP</h3>
                     <form>
                         <div class="input-group">
-                            <input type="text" placeholder="Enter email or username" required>
+                            <input type="text" placeholder="Tên đăng nhập" required>
                         </div>
                         <div class="input-group">
-                            <input type="password" id="password" name ="password" placeholder="Password" required>
+                            <input type="password" id="password" name ="password" placeholder="Mật khẩu" required>
                             <i class="fa-solid fa-eye" id="show-password"></i>
                         </div>
                         <div class="forgot-password">
-                            <a href="<?= base_url('/forgetpassword') ?>">Forgot password?</a>
+                            <a href="<?= base_url('/forgetpassword') ?>">Quên mật khẩu?</a>
                         </div>
-                        <button type="submit" class="login-btn">Login</button>
+                        <button type="submit" class="login-btn">Đăng nhập</button>
                     </form>
-                    <p class="register-link">If you don't have an account, register <a href="#">here</a>!</p>
                 </div>
             </div>
         </div>
         <footer>
-            <p>By Díp Dồ</p>
+            <p>By Díp Dồ Team</p>
+            <img src="assets/images/logo.png" alt="">
         </footer>
         
     </main>
