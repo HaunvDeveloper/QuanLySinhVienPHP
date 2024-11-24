@@ -19,7 +19,7 @@
 <body>
     <header>
         <div id="header-info" class="w-100">
-            <img id="logo" src="assets/images/logo.png" width="150">
+            <img id="logo" src="assets/images/Logo-HCMUE.png">
             <h1>Quản lý HCMUE</h1>
         </div>
         <nav class="navbar navbar-expand-sm navbar-light" style="background-color: rgba(18, 72, 116, 1);;" id="header-bar">
@@ -99,7 +99,7 @@
 
     <footer>
         <div id="footer-info">
-            <div class="row">
+            <div class="row container">
                 <div class="col-5 column">
                     <h4>Trường Đại học Sư phạm Thành phố Hồ Chí Minh</h4>
                     <h6>Địa chỉ: 280 An Dương Vương, Quận 5, TP.HCM</h6>
@@ -110,14 +110,15 @@
                     <h6>Số lượng truy cập: xxxxxx</h6>
                     <h1>::.</h1>
                 </div>
-                <img class="toanha" src="assets/images/footer_image.png" alt="">
             </div>
             <div class="footer-line"></div>
+            <img class="toanha" src="assets/images/footer_image.png" alt="">
 
             
         </div>
         <div id="sign">
                 <p>By Díp Dồ Team </p>
+                <img src="assets/images/logo.png" width="23" height="23" alt="">
             </div>
     </footer>
 

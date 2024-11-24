@@ -336,3 +336,20 @@ table .dropdown-item.active, .dropdown-item:active{
 .xsmall li:last-child a:after {
     content: "Next";
 }
+
+
+.image-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-service{
+    width: 45px;
+    padding: 7px 9px;
+    
+}
+
+.btn-service img{
+    margin: 0;
+    padding: 0;
+}

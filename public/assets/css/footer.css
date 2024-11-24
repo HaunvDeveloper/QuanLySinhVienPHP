@@ -2,6 +2,8 @@
     background-color: rgba(18, 72, 116, 1);
     color: white;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .column{
@@ -10,16 +12,24 @@
 }
 
 .row{
-    padding: 50px 120px;
+    padding: 20px 40px;
 }
 
 #sign{
     background-color: rgb(71, 72, 85);
     color: rgba(255, 255, 255, 0.599);
     text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-top: 4px;
 }
 #sign p{
-    margin-right: 30px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+#sign img{
+    margin-right: 10px;
 }
 
 .imghcmue{
@@ -35,7 +45,7 @@ footer .toanha{
     right: 0;
     bottom: 0;
     width: auto;
-    height: 350px;
+    height: 300px;
     z-index: 100;
 }
 .footer-line{

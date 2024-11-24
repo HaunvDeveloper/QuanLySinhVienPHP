@@ -24,13 +24,14 @@ Danh sách giáo viên
       <button data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-add-course">+ Thêm môn học</button>
     </div>
 
-    <table class="table table-hover">
+    <table class="table table-bordered table-hover">
       <thead>
         <tr>
-          <th>Mã môn học</th>
-          <th>Tên môn học</th>
-          <th>Khoa - Bộ môn</th>
-          <th></th>
+          <th class="text-center">Mã môn học</th>
+          <th class="text-center">Tên môn học</th>
+          <th class="text-center">Số tín chỉ</th>
+          <th class="text-center">Khoa - Bộ môn</th>
+          <th width="13%"></th>
         </tr>
       </thead>
       <tbody>
@@ -38,17 +39,11 @@ Danh sách giáo viên
         <tr>
           <td>COMP18001</td>
           <td>Công nghệ phần mềm</td>
+          <td class="text-center">3</td>
           <td>Công nghệ Thông tin</td>
-          <td>
-            <div class="dropdown">
-              <button class="btn btn-link text-decoration-none dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              ⋮
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Sửa</a></li>
-                <li><a class="dropdown-item" href="#">Xóa</a></li>
-              </ul>
-            </div>
+          <td class="text-center">
+            <a href="" class="btn-service btn btn-primary mx-1"><img src="assets/images/pen-solid.svg" height="20" alt=""></a>
+            <a href="" class="btn-service btn btn-danger"><img src="assets/images/trash-solid.svg" height="20" alt=""></a>
           </td>
         </tr>
         <?php endfor; ?>
